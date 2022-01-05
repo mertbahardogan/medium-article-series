@@ -1,0 +1,25 @@
+version: '3.9'
+services:
+  product-service:
+    container_name: 'product_service'
+    ports:
+      - "8000:8000"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - product-database
+    environment:
+      - "JAVA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000 -Xms128m -Xmx256m"
+      - "SPRING_DATASOURCE_URL=product-database:27017/product"
+      - "SERVER_PORT=8000"
+      - "SPRING_APPLICATION_NAME=product-microservice"
+      - "SERVER_SERVLET_CONTEXTPATH=/api/v1"
+      - "SPRING_DATA_MONGODB_PORT=27017"
+      - "SPRING_DATA_MONGODB_DATABASE=product"
+      - "SPRING_DATA_MONGODB_HOST=product-database"
+  product-database:
+    container_name: 'product_database'
+    ports:
+      - "27017:27017"
+    image: mongo
