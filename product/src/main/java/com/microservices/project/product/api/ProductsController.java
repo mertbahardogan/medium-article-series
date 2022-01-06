@@ -34,17 +34,17 @@ public class ProductsController {
     }
 
     @PutMapping(value = "/{id}")
-    public ResponseEntity update(@RequestBody Product newProduct,@PathVariable(value = "id") String id) {
-        return new ResponseEntity<>(this.productService.update(newProduct,id), HttpStatus.OK);
+    public ResponseEntity update(@PathVariable(value = "id") String id, @RequestBody Product newProduct) {
+        return new ResponseEntity<>(this.productService.update(id,newProduct), HttpStatus.OK);
     }
 
-    @PatchMapping()
-    public ResponseEntity updateTitle(@RequestBody String title,@PathVariable(value = "id") String id) {
-        return new ResponseEntity<>(this.productService.updateTitle(title,id), HttpStatus.OK);
+    @PatchMapping(value = "/{id}/")
+    public ResponseEntity updateTitle(@PathVariable(value = "id") String id, @RequestParam String title) {
+        return new ResponseEntity<>(this.productService.updateTitle(id,title), HttpStatus.OK);
     }
 
     @DeleteMapping(value = "/{id}")
     public ResponseEntity delete(@PathVariable(value = "id") String id) {
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>(this.productService.delete(id),HttpStatus.OK);
     }
 }

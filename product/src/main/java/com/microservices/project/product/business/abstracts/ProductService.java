@@ -11,7 +11,7 @@ public interface ProductService {
     List<Product> findAll();
     Optional<Product> findById(String id);
     Product create(Product newProduct);
-    Product update(Product newProduct,String id);
+    Product update(String id,Product newProduct);
     boolean delete(String id);
-    Product updateTitle(String title,String id);
+    Product updateTitle(String id,String title);
 }

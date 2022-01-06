@@ -35,7 +35,7 @@ public class ProductManager implements ProductService {
     }
 
     @Override
-    public Product update(Product oldProduct, String id) {
+    public Product update(String id,Product oldProduct) {
         Product newProduct=this.productDAO.findById(id).get();
         newProduct.setTitle(oldProduct.getTitle());
         newProduct.setPrice(oldProduct.getPrice());
@@ -50,8 +50,9 @@ public class ProductManager implements ProductService {
     }
 
     @Override
-    public Product updateTitle(String title, String id) {
+    public Product updateTitle(String id,String title) {
         Product newProduct=this.productDAO.findById(id).get();
+        System.out.println(newProduct);
         newProduct.setTitle(title);
         return this.productDAO.save(newProduct);
     }
