@@ -16,10 +16,8 @@
 
 
 ## Port List
-* [Film Services](http://localhost:8088/film-controller/api/)
-* [User Services](http://localhost:8088/controller/api/)
-* [Film Services-Swagger](http://localhost:8088/film-controller/swagger-ui.html#)
-* [User Services-Swagger](http://localhost:8088/controller/swagger-ui.html#)
+* [Product Service](http://localhost:8000/api/v1/products)
+* [Product Service-Swagger](http://localhost:8000/api/v1/swagger-ui/)
 
 ## Built With
 
