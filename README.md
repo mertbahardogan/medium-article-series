@@ -21,8 +21,7 @@
 * [Product Service-Swagger](http://localhost:8000/api/v1/swagger-ui/)
 
 ### Docker Image
-1. Microservices Architecture
-2. Layered Architecture
+https://hub.docker.com/r/19812381238/product-microservice
 
 ## Built With
 
