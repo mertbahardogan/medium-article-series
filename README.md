@@ -13,7 +13,7 @@
 
 #### For more details, you can read my articles:
 1. [How to Dockerize Spring Boot and MongoDB Project with Microservice Architecture?](https://mbahardogan.medium.com/how-to-dockerize-spring-boot-using-microservice-architecture-3413afcf3df5)
-2. [CI/CD Pipeline with Spring Boot Application (NEW)](https://mbahardogan.medium.com/how-to-dockerize-spring-boot-using-microservice-architecture-3413afcf3df5)
+2. [CI/CD Pipeline with Spring Boot Application (NEW)](https://mbahardogan.medium.com/ci-cd-pipeline-with-spring-boot-application-9763ef1ac5f9)
 
 
 ## Port List
