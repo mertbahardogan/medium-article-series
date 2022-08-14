@@ -34,8 +34,8 @@ public class ProductManagerTest {
         productObject.setPrice(new BigDecimal("1.000"));
         productObject.setQuantity(3000);
 
-        Product filmMock = Mockito.mock(Product.class);
-        when(productDAO.save(ArgumentMatchers.any(Product.class))).thenReturn(filmMock);
+        Product productMock = Mockito.mock(Product.class);
+        when(productDAO.save(ArgumentMatchers.any(Product.class))).thenReturn(productMock);
         Product result = productManager.create(productObject);
 
         assertEquals(result,productObject);

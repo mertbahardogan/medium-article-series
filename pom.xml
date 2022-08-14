@@ -12,6 +12,20 @@
 		<version>2.6.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
+	<developers>
+		<developer>
+			<id>mb</id>
+			<name>Mert BAHARDOGAN</name>
+			<email>mbahardogan@hotmail.com</email>
+			<roles>
+				<role>
+					Jr. Software Engineer
+				</role>
+			</roles>
+		</developer>
+	</developers>
+
 	<groupId>com.microservices.project</groupId>
 	<artifactId>microservices-project</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
