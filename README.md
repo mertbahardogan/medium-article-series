@@ -1,4 +1,4 @@
-# Hey, you can reach all information here about my articles.
+# Hey, you can reach all information here about my project & articles.
 
 ## Requirements
 
@@ -12,25 +12,32 @@
 ## Important
 
 #### For more details, you can read my articles:
-1. https://mbahardogan.medium.com/how-to-dockerize-spring-boot-using-microservice-architecture-3413afcf3df5
+1. [How to Dockerize Spring Boot and MongoDB Project with Microservice Architecture?](https://mbahardogan.medium.com/how-to-dockerize-spring-boot-using-microservice-architecture-3413afcf3df5)
+2. [CI/CD Pipeline with Spring Boot Application (NEW)](https://mbahardogan.medium.com/how-to-dockerize-spring-boot-using-microservice-architecture-3413afcf3df5)
 
 
 ## Port List
 * [Product Service](http://localhost:8000/api/v1/products)
 * [Product Service-Swagger](http://localhost:8000/api/v1/swagger-ui/)
 
+### Docker Image
+1. Microservices Architecture
+2. Layered Architecture
+
 ## Built With
 
 ### Technologies
-1. Java 
-2. Spring Boot
+1. Java
+2. Spring Boot (v2.6.2)
 3. Docker (Dockerfile and Docker Compose)
+4. GitHub Actions (CI/CD Pipeline)
 5. Swagger
 
 
 ### Architectures
 1. Microservices Architecture
 2. Layered Architecture
+
 
 
 ## Contributing
@@ -46,4 +53,4 @@ Contributions are what make the open source community such an amazing place to l
 
 ## Contact
 ### Would you like to any notify or suggest something to me?
-mbahardogan4@gmail.com
+mbahardogan@hotmail.com
