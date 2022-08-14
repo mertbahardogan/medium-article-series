@@ -61,7 +61,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-        <finalName>product-microservice</finalName>
+        <finalName>product</finalName>
     </build>
 
 
