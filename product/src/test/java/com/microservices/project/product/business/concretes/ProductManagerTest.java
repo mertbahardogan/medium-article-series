@@ -18,7 +18,7 @@ import static org.mockito.Mockito.when;
 
 
 @ExtendWith(MockitoExtension.class)
-public class ProductManagerTest {
+class ProductManagerTest {
 
     @InjectMocks
     private ProductManager productManager;
@@ -27,7 +27,8 @@ public class ProductManagerTest {
     private ProductDAO productDAO;
 
     @Test
-    public void givenProduct_whenCreate_thenReturnProduct() {
+    void testCreate_givenProduct_thenReturnProduct() {
+        // given
         Product productObject = new Product();
         productObject.setId(UUID.randomUUID().toString());
         productObject.setTitle("iPhone 13");
@@ -36,8 +37,11 @@ public class ProductManagerTest {
 
         Product productMock = Mockito.mock(Product.class);
         when(productDAO.save(ArgumentMatchers.any(Product.class))).thenReturn(productMock);
+        
+        // when
         Product result = productManager.create(productObject);
-
+        
+        // then
         assertEquals(result,productObject);
     }
 }
